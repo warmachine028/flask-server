@@ -1,0 +1,19 @@
+[tool.poetry]
+name = "flask-server"
+version = "0.1.0"
+description = "A project to learn flask and deploy it with best practices"
+authors = ["warmachine028 <warmachine028@outlook.com>"]
+license = "MIT"
+readme = "README.md"
+
+[tool.poetry.scripts]
+start = 'echo hello'
+
+[tool.poetry.dependencies]
+python = "^3.11"
+flask = "^2.3.3"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
