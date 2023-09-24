@@ -7,7 +7,7 @@
     ],
     "routes": [
         {
-			"src": "/(.*",
+			"src": "/(.*)",
 			"dest": "flask_server/__main__.py"
 		}
     ]
