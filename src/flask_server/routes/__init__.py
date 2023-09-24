@@ -1,8 +1,6 @@
-import importlib.metadata
 from flask_httpauth import HTTPBasicAuth, HTTPTokenAuth
 from werkzeug.security import generate_password_hash, check_password_hash
 
-__version__ = importlib.metadata.version("flask_server")
 
 basic_auth = HTTPBasicAuth()
 token_auth = HTTPTokenAuth(scheme="Bearer")
