@@ -1,5 +1,5 @@
 name: 🐛 Bug Bounty Hunter
-description: Report an bug in flask-server and help improve the project!
+description: Report an bug in flask_server and help improve the project!
 labels: ["🛠 goal: fix", "good first issue", "🤩 Up for the grab", "help wanted", "enhancement", "bug"]
 title: "[BUG 🐞] <description>"
 body:
