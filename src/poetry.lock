@@ -59,6 +59,20 @@ async = ["asgiref (>=3.2)"]
 dotenv = ["python-dotenv"]
 
 [[package]]
+name = "flask-httpauth"
+version = "4.8.0"
+description = "HTTP authentication for Flask routes"
+optional = false
+python-versions = "*"
+files = [
+    {file = "Flask-HTTPAuth-4.8.0.tar.gz", hash = "sha256:66568a05bc73942c65f1e2201ae746295816dc009edd84b482c44c758d75097a"},
+    {file = "Flask_HTTPAuth-4.8.0-py3-none-any.whl", hash = "sha256:a58fedd09989b9975448eef04806b096a3964a7feeebc0a78831ff55685b62b0"},
+]
+
+[package.dependencies]
+flask = "*"
+
+[[package]]
 name = "itsdangerous"
 version = "2.1.2"
 description = "Safely pass data to untrusted environments and back."
@@ -156,6 +170,23 @@ files = [
 ]
 
 [[package]]
+name = "pyjwt"
+version = "2.8.0"
+description = "JSON Web Token implementation in Python"
+optional = false
+python-versions = ">=3.7"
+files = [
+    {file = "PyJWT-2.8.0-py3-none-any.whl", hash = "sha256:59127c392cc44c2da5bb3192169a91f429924e17aff6534d70fdc02ab3e04320"},
+    {file = "PyJWT-2.8.0.tar.gz", hash = "sha256:57e28d156e3d5c10088e0c68abb90bfac3df82b40a71bd0daa20c65ccd5c23de"},
+]
+
+[package.extras]
+crypto = ["cryptography (>=3.4.0)"]
+dev = ["coverage[toml] (==5.0.4)", "cryptography (>=3.4.0)", "pre-commit", "pytest (>=6.0.0,<7.0.0)", "sphinx (>=4.5.0,<5.0.0)", "sphinx-rtd-theme", "zope.interface"]
+docs = ["sphinx (>=4.5.0,<5.0.0)", "sphinx-rtd-theme", "zope.interface"]
+tests = ["coverage[toml] (==5.0.4)", "pytest (>=6.0.0,<7.0.0)"]
+
+[[package]]
 name = "werkzeug"
 version = "2.3.7"
 description = "The comprehensive WSGI web application library."
@@ -175,4 +206,4 @@ watchdog = ["watchdog (>=2.3)"]
 [metadata]
 lock-version = "2.0"
 python-versions = "^3.11"
-content-hash = "873dfbdd3c63c44ebc092b8b50466de554710a63334e4aec95bc361ed1cc18b5"
+content-hash = "1e16fbd0d2c3658d70de7dcd708ef733421ee9fbc347e694a9feba5cc769ac3f"
