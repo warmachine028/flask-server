@@ -2,7 +2,7 @@
 	"rewrites": [
 		{
 			"source": "/(.*)", 
-			"destination": "/flask_server/__main__" 
+			"destination": "/flask_server/__main__.py" 
 		}
 	]
 }
