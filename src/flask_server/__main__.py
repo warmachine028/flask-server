@@ -3,8 +3,7 @@ from flask_server import create_app
 app = create_app()
 
 def main():
-    # app.run(host="localhost", debug=True)
-    app.run(host="0.0.0.0")
+    app.run(host="localhost", debug=True)
 
 @app.route("/")
 def hello_world():
