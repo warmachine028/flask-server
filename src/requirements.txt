@@ -3,7 +3,6 @@ click==8.1.7
 colorama==0.4.6
 Flask==2.3.3
 Flask-HTTPAuth==4.8.0
--e git+https://github.com/warmachine028/flask-server.git@5717ae444293af2d286b8179c44ee0a3f236e259#egg=flask_server&subdirectory=src
 itsdangerous==2.1.2
 Jinja2==3.1.2
 MarkupSafe==2.1.3
