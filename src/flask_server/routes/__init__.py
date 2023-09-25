@@ -1,4 +1,5 @@
 from flask_httpauth import HTTPBasicAuth, HTTPTokenAuth
+import jwt
 from werkzeug.security import generate_password_hash, check_password_hash
 
 
@@ -23,6 +24,10 @@ def verify_basic_password(username, password):
 
 @token_auth.verify_token
 def verify_token(token):
-    if token not in allowed_tokens:
-        return
-    return allowed_tokens[token]
+    try:
+        decoded_jwt = jwt.decode(token, "mysecret", algorithm=["HS256"])
+    except Exception as e:
+        return None
+    if decoded_jwt["name"] in allowed_users:
+        return decoded_jwt["name"]
+    return None
