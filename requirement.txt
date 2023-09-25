@@ -1,16 +1,1 @@
-blinker==1.6.2
-click==8.1.7
-colorama==0.4.6
-distlib==0.3.7
-Flask==2.3.3
-Flask-HTTPAuth==4.8.0
--e git+https://github.com/warmachine028/flask-server.git@33354a590f2c4bf5626ab131e204dc4f88527baa#egg=flask_server&subdirectory=src
-itsdangerous==2.1.2
-Jinja2==3.1.2
-MarkupSafe==2.1.3
-ptyprocess==0.7.0
-PyJWT==2.8.0
-trove-classifiers==2023.9.19
-urllib3==2.0.5
-Werkzeug==2.3.7
-zipp==3.17.0
+Flask==2.2.5
