@@ -10,7 +10,7 @@ readme = "README.md"
 start = 'flask_server.__main__:main'
 
 [tool.poetry.dependencies]
-python = "3.9"
+python = "^3.9"
 flask = "^2.3.3"
 flask-httpauth = "^4.8.0"
 pyjwt = "^2.8.0"
