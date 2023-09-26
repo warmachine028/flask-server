@@ -4,7 +4,7 @@ import os
 app = create_app()
 
 def main():
-    app.run(port=os.environ.get('PORT', 5000))
+    app.run(port=os.environ.get('PORT', 3000))
 
 @app.route("/")
 def hello_world():
