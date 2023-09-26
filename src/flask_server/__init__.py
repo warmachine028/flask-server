@@ -1,9 +1,11 @@
 from importlib import metadata
 from flask import Flask
-from flask_server.routes.health import health_bp
-from flask_server.routes.users import users_bp
-from flask_server.routes.error import error_bp
-from flask_server.routes.auth import auth_bp
+from flask_server.routes import (
+    health_bp,
+    users_bp,
+    error_bp,
+    auth_bp
+)
 
 __version__ = metadata.version("flask_server")
 

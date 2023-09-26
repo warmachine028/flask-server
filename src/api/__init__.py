@@ -1,17 +1,1 @@
-from importlib import metadata
-from flask import Flask
-from api.routes.health import health_bp
-from api.routes.users import users_bp
-from api.routes.error import error_bp
-from api.routes.auth import auth_bp
-
-__version__ = metadata.version("flask_server")
-
-
-def create_app():
-    app = Flask(__name__)
-    app.register_blueprint(health_bp)
-    app.register_blueprint(users_bp)
-    app.register_blueprint(error_bp)
-    app.register_blueprint(auth_bp)
-    return app
+from api.index import app
