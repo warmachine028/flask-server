@@ -1,11 +1,11 @@
-# from importlib import metadata
+from importlib import metadata
 # from api import create_app
-
-# __version__ = metadata.version("flask_server")
+from api.file import SPAM
 
 from flask import Flask
 
 app = Flask(__name__)
+__version__ = metadata.version("flask_server")
 
 
 def main():
@@ -14,7 +14,7 @@ def main():
 
 @app.route("/")
 def hello_world():
-    return "<h1>Hello from flask Server</h1>"
+    return f"<h1>Hello from flask Server {SPAM}</h1>"
 
 
 if __name__ == "__main__":
