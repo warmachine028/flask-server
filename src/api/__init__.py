@@ -1,1 +1,5 @@
-from api.index import app
+from .index import app
+
+__all__ = [
+    "app"
+]
