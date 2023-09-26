@@ -1,6 +1,6 @@
 from importlib import metadata
 # from api import create_app
-from api.file import SPAM
+from .file import SPAM
 
 from flask import Flask
 
