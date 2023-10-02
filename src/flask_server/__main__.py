@@ -1,4 +1,4 @@
-# from flask_server import create_app
+from flask_server import create_app
 # import os
 
 # app = create_app()
@@ -20,5 +20,5 @@ app = Flask(__name__)
 
 @app.route("/")
 def hello_world():
-    return "<h1>Hello from flask Server</h1>"
+    return "<h1>Hello from flask Server</h1>" + str(create_app)
 
