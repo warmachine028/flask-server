@@ -1,0 +1,14 @@
+{
+	"version": 2,
+	"routes": [
+		{
+			"src": "/(.*)",
+			"dest": "flask_server/__main__.py"
+		}
+	],
+	"functions": {
+		"flask_server/__main__.py": {
+			"includeFiles": "flask_server/**"
+		}
+	}
+}
