@@ -1,7 +1,7 @@
 {
 	"builds": [
 		{
-			"src": "flask_server",
+			"src": "flask_server/__main__.py",
 			"use": "@vercel/python"
 		}
 	],
