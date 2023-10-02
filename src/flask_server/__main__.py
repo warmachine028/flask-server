@@ -19,7 +19,7 @@ import os
 sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), "..")))
 
 # from flask_server.__init__ import create_app
-from .__init__ import create_app
+from flask_server import create_app
 
 app = Flask(__name__)
 
