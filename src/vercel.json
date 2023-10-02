@@ -1,11 +1,5 @@
 {
 	"version": 2,
-	"builds": [
-		{
-			"src": "flask_server/__main__.py",
-			"use": "@vercel/python"
-		}
-	],
 	"routes": [
 		{
 			"src": "/(.*)",
