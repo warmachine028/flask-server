@@ -1,7 +1,7 @@
 {
 	"builds": [
 		{
-			"destination": "/api/index",
+			"src": "/api/index",
 			"use": "@vercel/python"
 		}
 	],
