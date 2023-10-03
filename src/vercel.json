@@ -1,8 +1,15 @@
 {
-	"functions": {
-		"api/index.py": {
-			"includeFiles": "flask_server/**"
+	"version": 2,
+	"builds": [
+		{
+			"src": "flask_server/app.py",
+			"use": "@vercel/python"
 		}
-	},
-	"routes": [{ "src": "/", "dest": "api/index.py" }]
+	],
+	"routes": [
+		{
+			"src": "/(.*)",
+			"dest": "flask_server/app.py"
+		}
+	]
 }
