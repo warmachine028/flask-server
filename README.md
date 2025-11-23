@@ -1,4 +1,4 @@
-    updated on: 09th October 2025, Thursday
+    updated on: 23rd November 2025, Sunday
 
 <div align=center>
     <a href="https://github.com/warmachine028/flask-server">
@@ -70,4 +70,4 @@
 [line]: https://user-images.githubusercontent.com/75939390/137615281-3a875960-92cc-407f-97fe-fd2319bdb252.png
 
 [License]: https://github.com/warmachine028/flask-server/blob/main/LICENSE
-<!-- 09/10/25 -->
+<!-- 23/11/25 -->
